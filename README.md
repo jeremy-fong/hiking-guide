@@ -31,3 +31,6 @@ Hiking application that will suggest hikes based on location that is searched. T
 - Express.js
 - handlebars.js
 - MySQL
+
+mapping library 
+geocoding api (google maps api)

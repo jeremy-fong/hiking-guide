@@ -4,11 +4,19 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
 	try {
-
+		res.render('homepage', { loggedIn: req.session.loggedIn })
 	} catch (err) {
 		res.status(500).json(err);
 	}
 });
+
+// router.get('/', async (req, res) => {
+// 	try {
+// 		res.render('homepage')
+// 	} catch (err) {
+// 		res.status(500).json(err);
+// 	}
+// });
 
 
 router.get('/login', (req, res) => {
@@ -17,7 +25,7 @@ router.get('/login', (req, res) => {
 		res.redirect('/profile');
 		return;
 	}
-
+// Otherwise, render the 'login' template
 	res.render('login');
 });
 
