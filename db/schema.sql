@@ -1,2 +1,4 @@
-DROP DATABASE IF EXISTS demo_proj;
-CREATE DATABASE demo_proj;
+DROP DATABASE IF EXISTS hikingUser_db;
+CREATE DATABASE hikingUser_db;
+
+-- USE hikingUser_db;

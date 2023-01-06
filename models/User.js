@@ -16,9 +16,36 @@ User.init(
 			primaryKey: true,
 			autoIncrement: true
 		},
-		name: {
+		first_name: {
 			type: DataTypes.STRING,
 			allowNull: false
+		},
+		last_name: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		username: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		address: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		city: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		state: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		zipcode: {
+			type: DataTypes.STRING,
+			allowNull: false,
+			validate: {
+				len: [5]
+			}
 		},
 		email: {
 			type: DataTypes.STRING,
@@ -32,9 +59,18 @@ User.init(
 			type: DataTypes.STRING,
 			allowNull: false,
 			validate: {
-				len: [8]
+				len: [8],
+				isAlphanumeric: true,
+				isUppercase: true
 			}
-		}
+		},
+		last_login: {
+			type: DataTypes.DATE,
+		},
+		status: {
+			type: DataTypes.ENUM('active', 'inactive'),
+			defaultValue: 'active'
+		},
 	},
 	{
 		hooks: {
@@ -46,10 +82,12 @@ User.init(
 				return newUserData;
 			},
 			beforeUpdate: async updatedUserData => {
-				updatedUserData.password = await bcrypt.hash(
-					updatedUserData.password,
-					10
-				);
+				if(newUserData.password) {
+					updatedUserData.password = await bcrypt.hash(
+						updatedUserData.password,
+						10
+					);
+				}
 				return updatedUserData;
 			}
 		},

@@ -1,0 +1,81 @@
+body {
+  background-image: url('/public/images/hiking_trail.jpg');
+  /* background-color: #A3DA8D; */
+}
+
+header {
+    padding: 17px;
+    text-align: center;
+    background: #395144;
+    color: var(--light);
+  }
+
+  nav {
+    display: flex;
+    background-color: #395144;
+
+  }
+
+  #nav {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    color: #D06224;
+    text-decoration: none;
+  }
+
+  ul#navbar {
+    list-style: none;
+    display: flex;
+  }
+
+  #navTitle {
+    font-family: 'Tillana', cursive;
+    font-size: 50px;
+    position: relative;
+  }
+
+  #login {
+    background-color: #D06224;
+  }
+
+  #login:hover {
+    background-color: #AE431E;
+  }
+
+  /* .transbox {
+    margin: 5rem 32rem;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    border-radius: 25px;
+  } */
+
+  .search-form {
+    display: block;
+    position: relative;
+    top: 80%;
+    left: 40%;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  #searchBtn {
+    background-color: #D06224;
+    position: relative;
+    top: 80%;
+    left: 9%;
+  }
+
+  #searchBtn:hover {
+    background-color: #AE431E;
+  }
