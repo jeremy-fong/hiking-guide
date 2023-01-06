@@ -28,25 +28,6 @@ User.init(
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		address: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		city: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		state: {
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		zipcode: {
-			type: DataTypes.STRING,
-			allowNull: false,
-			validate: {
-				len: [5]
-			}
-		},
 		email: {
 			type: DataTypes.STRING,
 			allowNull: false,
@@ -63,13 +44,6 @@ User.init(
 				isAlphanumeric: true,
 				isUppercase: true
 			}
-		},
-		last_login: {
-			type: DataTypes.DATE,
-		},
-		status: {
-			type: DataTypes.ENUM('active', 'inactive'),
-			defaultValue: 'active'
 		},
 	},
 	{

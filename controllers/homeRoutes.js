@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const {  User } = require('../models');
 const withAuth = require('../utils/auth');
+const trails = require('../db/trails.json');
 
 router.get('/', async (req, res) => {
 	try {
@@ -10,13 +11,13 @@ router.get('/', async (req, res) => {
 	}
 });
 
-// router.get('/', async (req, res) => {
-// 	try {
-// 		res.render('homepage')
-// 	} catch (err) {
-// 		res.status(500).json(err);
-// 	}
-// });
+router.get('/trails', async (req, res) => {
+	try {
+		res.render('trails', trails.data[0])
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
 
 
 router.get('/login', (req, res) => {
