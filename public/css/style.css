@@ -1,10 +1,22 @@
 body {
-  background-image: url('/public/images/hiking_trail.jpg');
+  background-image: url('/images/hiking-trail2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
   /* background-color: #A3DA8D; */
 }
 
+footer {
+  background: #395144;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* header and nav */
 header {
-    padding: 17px;
+    padding: 10px;
     text-align: center;
     background: #395144;
     color: var(--light);
@@ -13,7 +25,6 @@ header {
   nav {
     display: flex;
     background-color: #395144;
-
   }
 
   #nav {
@@ -43,39 +54,176 @@ header {
     position: relative;
   }
 
-  #login {
+  /* Login card and page */
+  .login-card {
+    margin: 0 0 20px 0;
+    flex: 0 0 50%;
+    /* max-width: 50%; */
+    padding: 5px;
+    border: 1px solid black;
+    /* border-radius: 25px; */
+    background-color:  rgba(33, 33, 33, 0.7);
+    /* background-color:  rgba(59, 59, 59, 0.32); */
+    /* background-color:  rgba(75, 75, 75, 0.32); */
+    /* background-color:  rgba(27, 27, 27, 0.8); */
+    color: var(--light);
+  }
+
+  #loginBtn {
     background-color: #D06224;
   }
 
-  #login:hover {
+  #loginBtn:hover {
     background-color: #AE431E;
   }
 
-  /* .transbox {
+  #logoutBtn {
+    background-color: #D06224;
+  }
+
+  #logoutBtn:hover {
+    background-color: #AE431E;
+  }
+
+  #loginPage {
+    margin-top: 10px;
+    /* background-image: url("/images/hiking-trail3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; */
+  }
+    
+  #signupBtn {
+    background-color: #D06224;
+  }
+  
+  #signupBtn:hover {
+    background-color: #AE431E;
+  }
+  
+  /* homepage search */
+  .transbox {
     margin: 5rem 32rem;
-    background-color: #ffffff;
+    /* background-color: rgba(75, 75, 75, 0.32); */
+    background-color: rgba(27, 27, 27, 0.8);
     border: 1px solid black;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     border-radius: 25px;
-  } */
+  }
 
   .search-form {
     display: block;
-    position: relative;
+    /* position: relative;
     top: 80%;
     left: 40%;
-    margin: auto;
-    /* justify-content: center;
-    align-items: center; */
+    margin: auto; */
+    justify-content: center;
+    align-items: center;
   }
 
   #searchBtn {
     background-color: #D06224;
     position: relative;
-    top: 80%;
-    left: 9%;
+    /* top: 80%; */
+    /* left: 10%; */
   }
 
   #searchBtn:hover {
     background-color: #AE431E;
+  }
+
+/* Meet the Team */
+  #meetTeam {
+    margin: 2rem 10rem;
+    background-color: rgba(27, 27, 27, 0.8);
+    border: 1px solid black;
+    /* opacity: 0.6; */
+    border-radius: 25px;
+  }
+
+  .profilePic {
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+      object-fit: cover;
+      border-radius: 25%;
+  }
+
+  ul.contact {
+    list-style: none;
+    color: #D06224;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  a.contact {
+    text-decoration: none;
+    list-style: none;
+    color: #D06224;
+    font-size: 1.25rem;
+  }
+
+  a.contact:hover {
+    color: #AE431E;
+  }
+
+  .contactTitle {
+    padding: 10px;
+  }
+
+  .aboutCard {
+    margin: 3rem;
+  }
+
+  .about {
+    padding: 15px;
+  }
+
+  #teamTitle {
+    padding: 5px;
+  }
+
+  /* trail cards */
+  .moreInfo {
+    list-style: none;
+    color: #D06224;
+    text-decoration: none;
+  }
+
+  a.moreInfo:hover {
+    color: #AE431E;
+  }
+
+  #trailBg {
+    background-image: url("/images/hiking-trail3.jpg");
+    padding: 2rem 5rem;
+    margin: auto;
+  }
+
+  .saveTrailBtn {
+    background-color: #D06224;
+  }
+
+  .saveTrailBtn:hover {
+    background-color: #AE431E;
+  }
+
+  #saveHike {
+    padding-top: 5rem;
+  }
+
+  #description {
+    padding: 10px;
+    margin: auto;
+  }
+
+  .trailThumb {
+    margin: auto;
+  }
+
+  /* fav trail */
+
+  #favTrail {
+    padding: 2rem 5rem;
+    margin: auto;
   }
