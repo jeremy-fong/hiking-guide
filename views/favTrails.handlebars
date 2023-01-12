@@ -1,4 +1,4 @@
-<ul id="trailBg">
+<ul id="favTrail">
 
    {{#each trailsData as |trail|}}
 
@@ -26,11 +26,14 @@
                <h5 style="font-style: italic"><strong><a href="{{trail.url}}" target="_blank" class="moreInfo">More Info </a></strong></h5>
             </div>
             <div class="col-sm-2 text-center" id="saveHike">
-               <button type="button" class="btn saveTrailBtn" data-trailname="{{trail.name}}"
+               <button type="button" class="btn saveTrailBtn" data-toggle="modal" data-trailname="{{trail.name}}"
                   data-myval="{{trail.id}}" data-description="{{trail.description}}" data-directions="{{trail.directions}}"
                   data-difficulty="{{trail.difficulty}}" data-stars="{{trail.stars}}" data-location="{{trail.location}}"
-                  data-url="{{trail.url}}" data-image="{{trail.thumbnail}}" data-length="{{trail.length}}">Save This
-                  Hike</button>
+                  data-url="{{trail.url}}" data-image="{{trail.thumbnail}}" data-length="{{trail.length}}">Delete</button>
+        <a href="#">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a>
+<i class="fa-solid fa-trash-can"></i>
             </div>
          </div>
       </div>
@@ -39,38 +42,3 @@
    {{/each}}
 
 </ul>
-
-{{!-- 
-{{#each users as |user| }} 
-!-- <section class="trails">
-    {{#each trails}}
-  <img src="/images/{{thumbnail}}">
-  <div class="trails-details">
-    <h3><a class="trailTitle" href="{{url}}">{{name}}</a></h3>
-    <p>Description: {{description}}</p>
-    <p>Directions: {{directions}}</p>
-    <p>Rating: {{rating}}</p>
-    <p>Length: {{length}} miles</p>
-    <p>Features: {{features}}</p>
-  </div>
-    {{/each}}
-</section> --}}
-{{!-- {{/each}} --}}
-{{!-- 
-{{id}}
-{{name}}
-{{url}}
-{{length}}
-{{description}}
-{{directions}}
-{{city}}
-{{region}}
-{{country}}
-{{lat}}
-{{lon}}
-{{difficulty}}
-{{features}}
-{{rating}}
-{{thumbnail}} --}}
-
- {{!-- as |trail| --}}

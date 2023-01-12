@@ -1,0 +1,21 @@
+[
+    {
+        "id": 277038,
+        "name": "Township 9 Bike Park",
+        "url": "https://www.singletracks.com/bike-trails/township-9-bike-park/",
+        "length": "1.0",
+        "description": "The park has beginner, intermediate and advance jump lines. There is also a cross country approx. 1/2 mile in lenght.",
+        "directions": "900 North 7th Street<br />\r\nSacramento&#8206; CA<br />\r\nUnited States",
+        "city": "Sacramento",
+        "region": "California",
+        "country": "United States",
+        "lat": "38.60014",
+        "lon": "-121.49085",
+        "difficulty": "Beginner",
+        "features": "Fat biking allowed in winter, Pump track, Restrooms",
+        "rating": 5,
+        "thumbnail": "https://images.singletracks.com/blog/wp-content/uploads/2015/11/imagejpeg83993-orig-scaled.jpg",
+        "user_id": 1,
+        "favTrail_id": 1
+      }
+]
