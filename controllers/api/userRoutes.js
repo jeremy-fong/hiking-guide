@@ -12,7 +12,7 @@ router.post('/register', async (req, res) => {
       email: req.body.email,
       password: req.body.password,
     });
-    console.log(UserData);
+    // console.log(UserData);
 
     // Set up sessions with the 'loggedIn' variable
     req.session.save(() => {
