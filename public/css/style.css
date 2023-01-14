@@ -7,6 +7,12 @@ body {
   /* background-color: #A3DA8D; */
 }
 
+h1, h2, h3 {
+  color: #fff;
+}
+
+
+
 footer {
   background: #395144;
   width: 100%;
@@ -52,6 +58,7 @@ header {
     font-family: 'Tillana', cursive;
     font-size: 50px;
     position: relative;
+    color: #fff;
   }
 
   /* Login card and page */
@@ -71,6 +78,7 @@ header {
 
   #loginBtn {
     background-color: #D06224;
+    color: #fff;
   }
 
   #loginBtn:hover {
@@ -79,6 +87,7 @@ header {
 
   #logoutBtn {
     background-color: #D06224;
+    color: #fff;
   }
 
   #logoutBtn:hover {
@@ -124,6 +133,7 @@ header {
   #searchBtn {
     background-color: #D06224;
     position: relative;
+    color: #fff;
     /* top: 80%; */
     /* left: 10%; */
   }
@@ -177,6 +187,7 @@ header {
 
   .about {
     padding: 15px;
+    color: #fff;
   }
 
   #teamTitle {
@@ -198,10 +209,12 @@ header {
     background-image: url("/images/hiking-trail3.jpg");
     padding: 2rem 5rem;
     margin: auto;
+    background-attachment: fixed;
   }
 
   .saveTrailBtn {
     background-color: #D06224;
+    color: #fff;
   }
 
   .saveTrailBtn:hover {
@@ -219,6 +232,14 @@ header {
 
   .trailThumb {
     margin: auto;
+  }
+
+  #hikeCard {
+    background-color: rgba(27, 27, 27, 0.8);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 15px 0px
   }
 
   /* fav trail */
