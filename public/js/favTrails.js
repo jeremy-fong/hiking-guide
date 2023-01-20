@@ -1,3 +1,4 @@
+// Save Trail Btn
 const saveBtn = document.querySelector('.saveTrailBtn')
 
 if(saveBtn){
@@ -20,7 +21,6 @@ if(saveBtn){
             image,
             length,
         } = e.target.dataset
-        // event.target.trailname
         var newTrailSav = {
           name: trailname,
           myval,
@@ -49,7 +49,7 @@ if(saveBtn){
     })
 }
 
-
+// Delete Trail Btn
 const deleteBtn = document.querySelector('.deleteTrailBtn')
 
 if(deleteBtn){

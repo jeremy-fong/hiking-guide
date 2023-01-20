@@ -1,8 +1,5 @@
 <ul id="trailBg">
-
    {{#each trailsData as |trail|}}
-
-
    <div class="hike" id={{ trail.id}}>
       <div class="card-body" id="hikeCard">
          <div class="row">
@@ -23,7 +20,6 @@
                <p id="stars">Rating: {{trail.rating}}</p>
                <p id="stars">Length: {{trail.length}} miles</p>
                <br>
-               {{!-- <h5 style="font-style: italic"><strong><a href="{{trail.directions}}" target="_blank">Directions</a></strong></h5> --}}
                <h5 style="font-style: italic"><strong><a href="{{trail.url}}" target="_blank" class="moreInfo">More Info </a></strong></h5>
             </div>
             <div class="col-sm-2 text-center" id="saveHike">
@@ -36,43 +32,7 @@
          </div>
       </div>
    </div>
-
    {{/each}}
-
 </ul>
 
 <script src="/js/favTrails.js"></script>
-{{!-- 
-{{#each users as |user| }} 
-!-- <section class="trails">
-    {{#each trails}}
-  <img src="/images/{{thumbnail}}">
-  <div class="trails-details">
-    <h3><a class="trailTitle" href="{{url}}">{{name}}</a></h3>
-    <p>Description: {{description}}</p>
-    <p>Directions: {{directions}}</p>
-    <p>Rating: {{rating}}</p>
-    <p>Length: {{length}} miles</p>
-    <p>Features: {{features}}</p>
-  </div>
-    {{/each}}
-</section> --}}
-{{!-- {{/each}} --}}
-{{!-- 
-{{id}}
-{{name}}
-{{url}}
-{{length}}
-{{description}}
-{{directions}}
-{{city}}
-{{region}}
-{{country}}
-{{lat}}
-{{lon}}
-{{difficulty}}
-{{features}}
-{{rating}}
-{{thumbnail}} --}}
-
- {{!-- as |trail| --}}
