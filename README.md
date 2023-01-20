@@ -64,6 +64,11 @@
 ```
 
 ## Screenshot Preview of Project :
+![happy-trails-ss1](https://user-images.githubusercontent.com/112743562/213654568-3cf75eb0-1f3c-4c2a-b800-e5733e551f87.jpg)
+![happy-trails-ss2](https://user-images.githubusercontent.com/112743562/213654594-837e2906-f843-47aa-9bab-9bc5a3cb7398.jpg)
+![happy-trails-ss3](https://user-images.githubusercontent.com/112743562/213654612-b2cf3a27-a3aa-4246-a08f-e1812242780c.jpg)
+![happy-trails-ss4](https://user-images.githubusercontent.com/112743562/213654640-7e203a7f-a2ab-48d4-8d41-8d451912c495.jpg)
+![happy-trails-ss5](https://user-images.githubusercontent.com/112743562/213654654-fbfcdc63-f2f5-4b7a-81d1-6b4086e903b5.jpg)
 
 ## Source :
 - GitHub Link: https://github.com/jeremy-fong/hiking-guide
