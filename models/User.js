@@ -41,8 +41,6 @@ User.init(
 			allowNull: false,
 			validate: {
 				len: [8],
-				// isAlphanumeric: true,
-				// isUppercase: true
 			}
 		},
 	},

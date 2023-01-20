@@ -221,6 +221,19 @@ header {
     background-color: #AE431E;
   }
 
+  #deleteTrail {
+    padding-top: 5rem;
+  }
+
+  .deleteTrailBtn {
+    background-color: #D06224;
+    color: #fff;
+  }
+
+  .deleteTrailBtn:hover {
+    background-color: #AE431E;
+  }
+
   #saveHike {
     padding-top: 5rem;
   }
